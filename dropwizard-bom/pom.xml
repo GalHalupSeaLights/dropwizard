@@ -21,7 +21,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <dropwizard.version>${project.version}</dropwizard.version>
+        <dropwizard.version>${project.version}sss</dropwizard.version>
         <guava.version>19.0</guava.version>
         <jersey.version>2.22.2</jersey.version>
         <jackson.api.version>2.7.4</jackson.api.version>
