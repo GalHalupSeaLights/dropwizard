@@ -28,6 +28,7 @@ public class DiscoverableSubtypeResolver extends StdSubtypeResolver {
 
     public DiscoverableSubtypeResolver() {
         this(Discoverable.class);
+        java here
     }
 
     public DiscoverableSubtypeResolver(Class<?> rootKlass) {
