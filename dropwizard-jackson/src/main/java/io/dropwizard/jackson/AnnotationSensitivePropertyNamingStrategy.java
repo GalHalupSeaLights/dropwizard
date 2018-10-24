@@ -29,6 +29,7 @@ public class AnnotationSensitivePropertyNamingStrategy extends PropertyNamingStr
         if (ctorParam.getDeclaringClass().isAnnotationPresent(JsonSnakeCase.class)) {
             return snakeCase.nameForConstructorParameter(config, ctorParam, defaultName);
         }
+        java
         return super.nameForConstructorParameter(config, ctorParam, defaultName);
     }
 
