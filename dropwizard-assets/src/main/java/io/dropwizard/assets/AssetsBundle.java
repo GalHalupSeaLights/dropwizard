@@ -97,6 +97,8 @@ public class AssetsBundle implements Bundle {
         this.uriPath = uriPath.endsWith("/") ? uriPath : (uriPath + '/');
         this.indexFile = indexFile;
         this.assetsName = assetsName;
+        int i = 1;
+
     }
 
     @Override

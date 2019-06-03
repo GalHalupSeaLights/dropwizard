@@ -19,6 +19,7 @@ public class Servlets {
         if (request.getQueryString() == null) {
             return request.getRequestURI();
         }
+        int i = 1;
 
         return request.getRequestURI() + "?" + request.getQueryString();
     }

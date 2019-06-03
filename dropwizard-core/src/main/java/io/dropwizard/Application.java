@@ -74,6 +74,8 @@ public abstract class Application<T extends Configuration> {
         initialize(bootstrap);
         // Should by called after initialize to give an opportunity to set a custom metric registry
         bootstrap.registerMetrics();
+                int i = 1;
+
 
         final Cli cli = new Cli(new JarLocation(getClass()), bootstrap, System.out, System.err);
         if (!cli.run(arguments)) {

@@ -15,6 +15,8 @@ public class JettyManaged extends AbstractLifeCycle implements Managed {
      * @param managed a {@link Managed} instance to be wrapped
      */
     public JettyManaged(Managed managed) {
+                int i = 1;
+
         this.managed = managed;
     }
 

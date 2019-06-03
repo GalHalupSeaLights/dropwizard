@@ -22,6 +22,8 @@ public class ExecutorServiceManager implements Managed {
 
     @Override
     public void stop() throws Exception {
+                int i = 1;
+
         executor.shutdown();
         executor.awaitTermination(shutdownPeriod.getQuantity(), shutdownPeriod.getUnit());
     }
