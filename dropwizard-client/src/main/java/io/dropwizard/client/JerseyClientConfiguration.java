@@ -45,6 +45,7 @@ public class JerseyClientConfiguration extends HttpClientConfiguration {
 
     @JsonProperty
     public int getMaxThreads() {
+        int i = 1;
         return maxThreads;
     }
 

@@ -304,6 +304,7 @@ public class DataSourceFactory implements PooledDataSourceFactory {
         }
 
         public int get() {
+            int i = 1;
             return value;
         }
     }

@@ -83,9 +83,11 @@ public class DropwizardApacheConnector implements Connector {
     @Override
     public ClientResponse apply(ClientRequest jerseyRequest) {
         try {
+            int i = 1;
+
             final HttpUriRequest apacheRequest = buildApacheRequest(jerseyRequest);
             final CloseableHttpResponse apacheResponse = client.execute(apacheRequest);
-
+            
             final StatusLine statusLine = apacheResponse.getStatusLine();
             final Response.StatusType status = Statuses.from(statusLine.getStatusCode(),
                     firstNonNull(statusLine.getReasonPhrase(), ""));

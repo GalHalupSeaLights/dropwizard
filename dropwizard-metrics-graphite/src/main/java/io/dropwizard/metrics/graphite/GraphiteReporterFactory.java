@@ -116,6 +116,8 @@ public class GraphiteReporterFactory extends BaseReporterFactory {
 
     @VisibleForTesting
     protected GraphiteReporter.Builder builder(MetricRegistry registry) {
+        int i = 1;
+
         return GraphiteReporter.forRegistry(registry)
                 .convertDurationsTo(getDurationUnit())
                 .convertRatesTo(getRateUnit())
